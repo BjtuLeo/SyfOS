@@ -1,20 +1,22 @@
 mod context;
 
+use crate::syscall::syscall;
+use crate::task::exit_current_and_run_next;
 use core::arch::global_asm;
 use riscv::register::{
     mtvec::TrapMode,
-    stvec,
-    scause::{self, Trap, Exception},
-    stval,
+    scause::{self, Exception, Trap},
+    stval, stvec,
 };
 
-use crate::syscall::syscall;
-use crate::batch::run_next_app;
+pub use context::TrapContext;
 
 global_asm!(include_str!("trap.S"));
 
 pub fn init() {
-    extern "C" { fn __alltraps(); }
+    extern "C" {
+        fn __alltraps();
+    }
     unsafe {
         stvec::write(__alltraps as *const () as usize, TrapMode::Direct);
     }
@@ -29,14 +31,9 @@ pub fn trap_handler(cx: &mut TrapContext) -> &mut TrapContext {
             cx.sepc += 4;
             cx.x[10] = syscall(cx.x[17], [cx.x[10], cx.x[11], cx.x[12]]) as usize;
         }
-        Trap::Exception(Exception::StoreFault) |
-        Trap::Exception(Exception::StorePageFault) => {
-            println!("[kernel] PageFault in application, core dumped.");
-            run_next_app();
-        }
-        Trap::Exception(Exception::IllegalInstruction) => {
-            println!("[kernel] IllegalInstruction in application, core dumped.");
-            run_next_app();
+        Trap::Exception(e) => {
+            println!("[kernel] Exception {:?} in application, core dumped.", e);
+            exit_current_and_run_next();
         }
         _ => {
             panic!("Unsupported trap {:?}, stval = {:#x}!", scause.cause(), stval);
@@ -44,5 +41,3 @@ pub fn trap_handler(cx: &mut TrapContext) -> &mut TrapContext {
     }
     cx
 }
-
-pub use context::TrapContext;
