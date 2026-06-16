@@ -1,0 +1,1 @@
+/mnt/user/target/riscv64gc-unknown-none-elf/release/05_23301012syf: /mnt/user/src/bin/05_23301012syf.rs /mnt/user/src/console.rs /mnt/user/src/lang_items.rs /mnt/user/src/lib.rs /mnt/user/src/syscall.rs

@@ -1,0 +1,14 @@
+/mnt/user/target/riscv64gc-unknown-none-elf/release/deps/spin-56ddfdd3b349ede3.rmeta: /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/lib.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/barrier.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/lazy.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/mutex.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/mutex/spin.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/mutex/ticket.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/once.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/rw_lock.rs
+
+/mnt/user/target/riscv64gc-unknown-none-elf/release/deps/libspin-56ddfdd3b349ede3.rlib: /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/lib.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/barrier.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/lazy.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/mutex.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/mutex/spin.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/mutex/ticket.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/once.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/rw_lock.rs
+
+/mnt/user/target/riscv64gc-unknown-none-elf/release/deps/spin-56ddfdd3b349ede3.d: /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/lib.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/barrier.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/lazy.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/mutex.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/mutex/spin.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/mutex/ticket.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/once.rs /root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/rw_lock.rs
+
+/root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/lib.rs:
+/root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/barrier.rs:
+/root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/lazy.rs:
+/root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/mutex.rs:
+/root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/mutex/spin.rs:
+/root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/mutex/ticket.rs:
+/root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/once.rs:
+/root/.cargo/registry/src/rsproxy.cn-c53d523d306e0180/spin-0.7.1/src/rw_lock.rs:
